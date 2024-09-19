@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewLanchonete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="28dp"
+        android:text="Lanchonete Julia"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCerveja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCerveja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:text="Cervejas: "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCoxinha"
+        app:layout_constraintStart_toStartOf="@+id/textViewLanchonete"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLanchonete" />
+
+    <TextView
+        android:id="@+id/textViewCoxinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:text="Coxinhas:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResultado"
+        app:layout_constraintStart_toStartOf="@+id/textViewCerveja"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCerveja" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="318dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="43dp"
+        android:text="Resultado: "
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoxinha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
